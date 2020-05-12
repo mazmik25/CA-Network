@@ -28,4 +28,9 @@ Pod::Spec.new do |spec|
   spec.source_files        = "CA-Network/**/*.{h,m,swift}"
   spec.public_header_files = "CA-Network/**/*.h"
   spec.exclude_files =  "CA-Network/Exclude"
+
+  spec.subspec 'Alamofire' do |c|
+      c.dependency 'Alamofire', '~> 4.9.1'
+  end
+
 end
