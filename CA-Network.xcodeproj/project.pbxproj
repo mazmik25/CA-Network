@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0275C4B1993DE6B99B0CF5AF /* Pods_CA_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CA52AC9ACC60E19122CB51 /* Pods_CA_Network.framework */; };
 		3203EE6B2431EBF300DC8AED /* ResponseWithMessageAndErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203EE6A2431EBF300DC8AED /* ResponseWithMessageAndErrorCode.swift */; };
 		3203EE6D2431EC2100DC8AED /* ResponseWithMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203EE6C2431EC2100DC8AED /* ResponseWithMetaData.swift */; };
 		3203EE6F2431EC5500DC8AED /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203EE6E2431EC5500DC8AED /* ErrorCode.swift */; };
+		323E4820246AF2CD002328BF /* CA_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325509D7242DAFB7002DBAB0 /* CA_Network.framework */; };
+		323E4823246AF2E8002328BF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E4822246AF2E8002328BF /* Alamofire.framework */; };
+		32493EDD24626A4A005656ED /* CovidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32493EDC24626A4A005656ED /* CovidModel.swift */; };
+		324A296A2460142F0017D131 /* Request+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A29692460142F0017D131 /* Request+Alamofire.swift */; };
+		324A296C246014EC0017D131 /* AlamofireAPISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A296B246014EC0017D131 /* AlamofireAPISetup.swift */; };
+		324A296F246018C50017D131 /* AlamofireMultipartSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A296E246018C50017D131 /* AlamofireMultipartSetup.swift */; };
+		324A297B246050E70017D131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A297A246050E70017D131 /* AppDelegate.swift */; };
+		324A297D246050E70017D131 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A297C246050E70017D131 /* SceneDelegate.swift */; };
+		324A297F246050E70017D131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324A297E246050E70017D131 /* ViewController.swift */; };
+		324A2982246050E70017D131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324A2980246050E70017D131 /* Main.storyboard */; };
+		324A2984246050E90017D131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324A2983246050E90017D131 /* Assets.xcassets */; };
+		324A2987246050E90017D131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324A2985246050E90017D131 /* LaunchScreen.storyboard */; };
 		325509DC242DAFB7002DBAB0 /* CA_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 325509DA242DAFB7002DBAB0 /* CA_Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		325509E4242DB0DB002DBAB0 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */; };
 		325509E6242DB2A3002DBAB0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E5242DB2A3002DBAB0 /* Request.swift */; };
-		325509E8242DB472002DBAB0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E7242DB472002DBAB0 /* HTTPMethod.swift */; };
+		325509E8242DB472002DBAB0 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E7242DB472002DBAB0 /* HttpMethod.swift */; };
 		325509EA242DB4CA002DBAB0 /* APISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E9242DB4CA002DBAB0 /* APISetup.swift */; };
 		325509ED242DB671002DBAB0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509EC242DB671002DBAB0 /* Reachability.swift */; };
 		325509F0242DBB34002DBAB0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509EF242DBB34002DBAB0 /* Response.swift */; };
@@ -35,18 +48,40 @@
 			remoteGlobalIDString = 325509D6242DAFB7002DBAB0;
 			remoteInfo = "CA-Network";
 		};
+		326A4E58246AF0420063E9FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 325509CE242DAFB7002DBAB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 325509D6242DAFB7002DBAB0;
+			remoteInfo = "CA-Network";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3203EE6A2431EBF300DC8AED /* ResponseWithMessageAndErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWithMessageAndErrorCode.swift; sourceTree = "<group>"; };
 		3203EE6C2431EC2100DC8AED /* ResponseWithMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWithMetaData.swift; sourceTree = "<group>"; };
 		3203EE6E2431EC5500DC8AED /* ErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
+		323E481C246AF2C7002328BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323E4822246AF2E8002328BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323E4826246AF2FC002328BF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32493EDC24626A4A005656ED /* CovidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModel.swift; sourceTree = "<group>"; };
+		324A29692460142F0017D131 /* Request+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Alamofire.swift"; sourceTree = "<group>"; };
+		324A296B246014EC0017D131 /* AlamofireAPISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPISetup.swift; sourceTree = "<group>"; };
+		324A296E246018C50017D131 /* AlamofireMultipartSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireMultipartSetup.swift; sourceTree = "<group>"; };
+		324A2978246050E70017D131 /* Sample CA Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample CA Network.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324A297A246050E70017D131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		324A297C246050E70017D131 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		324A297E246050E70017D131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		324A2981246050E70017D131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		324A2983246050E90017D131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		324A2986246050E90017D131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		324A2988246050E90017D131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		325509D7242DAFB7002DBAB0 /* CA_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CA_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		325509DA242DAFB7002DBAB0 /* CA_Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CA_Network.h; sourceTree = "<group>"; };
 		325509DB242DAFB7002DBAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		325509E5242DB2A3002DBAB0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		325509E7242DB472002DBAB0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		325509E7242DB472002DBAB0 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		325509E9242DB4CA002DBAB0 /* APISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISetup.swift; sourceTree = "<group>"; };
 		325509EC242DB671002DBAB0 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		325509EF242DBB34002DBAB0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -59,13 +94,26 @@
 		32550A09242E102F002DBAB0 /* PostLoginJaga2GoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginJaga2GoAPI.swift; sourceTree = "<group>"; };
 		32550A0D242E1064002DBAB0 /* Jaga2GoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jaga2GoEnvironment.swift; sourceTree = "<group>"; };
 		32550A0F242E392E002DBAB0 /* PostLoginBodyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginBodyResponse.swift; sourceTree = "<group>"; };
+		B8DBCFFF7662C2108A37959B /* Pods-CA-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CA-Network.release.xcconfig"; path = "Target Support Files/Pods-CA-Network/Pods-CA-Network.release.xcconfig"; sourceTree = "<group>"; };
+		C5CA52AC9ACC60E19122CB51 /* Pods_CA_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CA_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED541E51076D5CCE9DE9F3D4 /* Pods-CA-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CA-Network.debug.xcconfig"; path = "Target Support Files/Pods-CA-Network/Pods-CA-Network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		324A2975246050E70017D131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E4820246AF2CD002328BF /* CA_Network.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		325509D4242DAFB7002DBAB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0275C4B1993DE6B99B0CF5AF /* Pods_CA_Network.framework in Frameworks */,
+				323E4823246AF2E8002328BF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +128,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32493EDB24626A3C005656ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32493EDC24626A4A005656ED /* CovidModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		324A296D246018B30017D131 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				324A296B246014EC0017D131 /* AlamofireAPISetup.swift */,
+				324A296E246018C50017D131 /* AlamofireMultipartSetup.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		324A2970246019100017D131 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				325509E5242DB2A3002DBAB0 /* Request.swift */,
+				324A29692460142F0017D131 /* Request+Alamofire.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		324A2979246050E70017D131 /* Sample CA Network */ = {
+			isa = PBXGroup;
+			children = (
+				32493EDB24626A3C005656ED /* Model */,
+				324A297A246050E70017D131 /* AppDelegate.swift */,
+				324A297C246050E70017D131 /* SceneDelegate.swift */,
+				324A297E246050E70017D131 /* ViewController.swift */,
+				324A2980246050E70017D131 /* Main.storyboard */,
+				324A2983246050E90017D131 /* Assets.xcassets */,
+				324A2985246050E90017D131 /* LaunchScreen.storyboard */,
+				324A2988246050E90017D131 /* Info.plist */,
+			);
+			path = "Sample CA Network";
+			sourceTree = "<group>";
+		};
 		325509CD242DAFB7002DBAB0 = {
 			isa = PBXGroup;
 			children = (
 				325509D9242DAFB7002DBAB0 /* CA-Network */,
 				325509F7242DEAE0002DBAB0 /* CA_NetworkTests */,
 				325509D8242DAFB7002DBAB0 /* Products */,
+				B8295BC6A34B7C27BDE1282F /* Pods */,
+				412A920580D92F369191761F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +185,7 @@
 			children = (
 				325509D7242DAFB7002DBAB0 /* CA_Network.framework */,
 				325509F6242DEAE0002DBAB0 /* CA_NetworkTests.xctest */,
+				324A2978246050E70017D131 /* Sample CA Network.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,9 +197,9 @@
 				325509EE242DBB27002DBAB0 /* Response */,
 				325509EB242DB662002DBAB0 /* Helper */,
 				325509E2242DB0C9002DBAB0 /* Setup */,
+				324A2970246019100017D131 /* Request */,
 				325509DA242DAFB7002DBAB0 /* CA_Network.h */,
 				325509DB242DAFB7002DBAB0 /* Info.plist */,
-				325509E5242DB2A3002DBAB0 /* Request.swift */,
 			);
 			path = "CA-Network";
 			sourceTree = "<group>";
@@ -116,8 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */,
-				325509E7242DB472002DBAB0 /* HTTPMethod.swift */,
+				325509E7242DB472002DBAB0 /* HttpMethod.swift */,
 				325509E9242DB4CA002DBAB0 /* APISetup.swift */,
+				324A296D246018B30017D131 /* Alamofire */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -182,9 +275,30 @@
 		32EFFB2B2431D832002654E7 /* Exclude */ = {
 			isa = PBXGroup;
 			children = (
+				324A2979246050E70017D131 /* Sample CA Network */,
 				32550A01242DEB4B002DBAB0 /* Sample */,
 			);
 			path = Exclude;
+			sourceTree = "<group>";
+		};
+		412A920580D92F369191761F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323E4826246AF2FC002328BF /* Alamofire.framework */,
+				323E4822246AF2E8002328BF /* Alamofire.framework */,
+				323E481C246AF2C7002328BF /* Alamofire.framework */,
+				C5CA52AC9ACC60E19122CB51 /* Pods_CA_Network.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8295BC6A34B7C27BDE1282F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED541E51076D5CCE9DE9F3D4 /* Pods-CA-Network.debug.xcconfig */,
+				B8DBCFFF7662C2108A37959B /* Pods-CA-Network.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +315,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		324A2977246050E70017D131 /* Sample CA Network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324A298B246050E90017D131 /* Build configuration list for PBXNativeTarget "Sample CA Network" */;
+			buildPhases = (
+				324A2974246050E70017D131 /* Sources */,
+				324A2975246050E70017D131 /* Frameworks */,
+				324A2976246050E70017D131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				326A4E59246AF0420063E9FD /* PBXTargetDependency */,
+			);
+			name = "Sample CA Network";
+			productName = "Sample CA Network";
+			productReference = 324A2978246050E70017D131 /* Sample CA Network.app */;
+			productType = "com.apple.product-type.application";
+		};
 		325509D6242DAFB7002DBAB0 /* CA-Network */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 325509DF242DAFB7002DBAB0 /* Build configuration list for PBXNativeTarget "CA-Network" */;
 			buildPhases = (
+				E1B4F8F52AC832E05FA11E80 /* [CP] Check Pods Manifest.lock */,
 				325509D2242DAFB7002DBAB0 /* Headers */,
 				325509D3242DAFB7002DBAB0 /* Sources */,
 				325509D4242DAFB7002DBAB0 /* Frameworks */,
@@ -247,6 +380,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Clapping Ape";
 				TargetAttributes = {
+					324A2977246050E70017D131 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					325509D6242DAFB7002DBAB0 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -271,11 +407,22 @@
 			targets = (
 				325509D6242DAFB7002DBAB0 /* CA-Network */,
 				325509F5242DEAE0002DBAB0 /* CA_NetworkTests */,
+				324A2977246050E70017D131 /* Sample CA Network */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		324A2976246050E70017D131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324A2987246050E90017D131 /* LaunchScreen.storyboard in Resources */,
+				324A2984246050E90017D131 /* Assets.xcassets in Resources */,
+				324A2982246050E70017D131 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		325509D5242DAFB7002DBAB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +439,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E1B4F8F52AC832E05FA11E80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CA-Network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		324A2974246050E70017D131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324A297F246050E70017D131 /* ViewController.swift in Sources */,
+				32493EDD24626A4A005656ED /* CovidModel.swift in Sources */,
+				324A297B246050E70017D131 /* AppDelegate.swift in Sources */,
+				324A297D246050E70017D131 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		325509D3242DAFB7002DBAB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,17 +483,20 @@
 				32550A0A242E102F002DBAB0 /* PostLoginJaga2GoAPI.swift in Sources */,
 				325509EA242DB4CA002DBAB0 /* APISetup.swift in Sources */,
 				32550A10242E392E002DBAB0 /* PostLoginBodyResponse.swift in Sources */,
+				324A296A2460142F0017D131 /* Request+Alamofire.swift in Sources */,
 				3203EE6D2431EC2100DC8AED /* ResponseWithMetaData.swift in Sources */,
+				324A296C246014EC0017D131 /* AlamofireAPISetup.swift in Sources */,
 				325509E4242DB0DB002DBAB0 /* APIEnvironment.swift in Sources */,
 				3203EE6F2431EC5500DC8AED /* ErrorCode.swift in Sources */,
 				325509E6242DB2A3002DBAB0 /* Request.swift in Sources */,
 				32550A06242DED73002DBAB0 /* CovidEnvironment.swift in Sources */,
 				32550A0E242E1064002DBAB0 /* Jaga2GoEnvironment.swift in Sources */,
+				324A296F246018C50017D131 /* AlamofireMultipartSetup.swift in Sources */,
 				325509ED242DB671002DBAB0 /* Reachability.swift in Sources */,
 				32550A08242DF0D4002DBAB0 /* GetAllCovidCasesAPI.swift in Sources */,
 				325509F0242DBB34002DBAB0 /* Response.swift in Sources */,
 				32550A03242DEB53002DBAB0 /* GetAllCovidCasesBodyResponse.swift in Sources */,
-				325509E8242DB472002DBAB0 /* HTTPMethod.swift in Sources */,
+				325509E8242DB472002DBAB0 /* HttpMethod.swift in Sources */,
 				3203EE6B2431EBF300DC8AED /* ResponseWithMessageAndErrorCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,9 +517,75 @@
 			target = 325509D6242DAFB7002DBAB0 /* CA-Network */;
 			targetProxy = 325509FC242DEAE0002DBAB0 /* PBXContainerItemProxy */;
 		};
+		326A4E59246AF0420063E9FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 325509D6242DAFB7002DBAB0 /* CA-Network */;
+			targetProxy = 326A4E58246AF0420063E9FD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		324A2980246050E70017D131 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324A2981246050E70017D131 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		324A2985246050E90017D131 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				324A2986246050E90017D131 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		324A2989246050E90017D131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7GMW42N3T;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/Alamofire";
+				INFOPLIST_FILE = "$(SRCROOT)/CA-Network/Exclude/Sample CA Network/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Alamofire",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.azmimuhammad.Sample-CA-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		324A298A246050E90017D131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R7GMW42N3T;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/Alamofire";
+				INFOPLIST_FILE = "$(SRCROOT)/CA-Network/Exclude/Sample CA Network/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(BUILT_PRODUCTS_DIR)/Alamofire",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.azmimuhammad.Sample-CA-Network";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		325509DD242DAFB7002DBAB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,6 +708,7 @@
 		};
 		325509E0242DAFB7002DBAB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED541E51076D5CCE9DE9F3D4 /* Pods-CA-Network.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +724,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.azmimuhammad.CA-Network";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -482,6 +736,7 @@
 		};
 		325509E1242DAFB7002DBAB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DBCFFF7662C2108A37959B /* Pods-CA-Network.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +752,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.azmimuhammad.CA-Network";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -544,6 +800,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		324A298B246050E90017D131 /* Build configuration list for PBXNativeTarget "Sample CA Network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324A2989246050E90017D131 /* Debug */,
+				324A298A246050E90017D131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		325509D1242DAFB7002DBAB0 /* Build configuration list for PBXProject "CA-Network" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

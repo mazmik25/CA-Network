@@ -7,7 +7,7 @@
 //
 
 struct GetAllCovidCasesAPI: APISetup {
-    var method: HTTPMethod = .GET
+    var method: HttpMethod = .GET
     var path: String = "/countries"
     var parameters: [String : Any] = ["sort":"country"]
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 public protocol APISetup {
-    var method: HTTPMethod {get}
+    var method: HttpMethod {get}
     var path: String {get}
     var parameters: [String:Any] {get}
 }

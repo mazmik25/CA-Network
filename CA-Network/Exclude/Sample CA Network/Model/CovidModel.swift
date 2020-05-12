@@ -1,12 +1,12 @@
 //
-//  SampleModel.swift
-//  CA-Network
+//  CovidModel.swift
+//  Sample CA Network
 //
-//  Created by Azmi Muhammad on 27/03/20.
+//  Created by Azmi Muhammad on 06/05/20.
 //  Copyright © 2020 Clapping Ape. All rights reserved.
 //
 
-import Foundation
+import CA_Network
 
 struct GetAllCovidCasesFullBodyResponse: Codable {
     let active : Int?

@@ -30,7 +30,6 @@ extension APIEnvironment {
     func decoder() -> JSONDecoder {
         let decoder = JSONDecoder()
         if isConvertedFromSnakeCase { decoder.keyDecodingStrategy = .convertFromSnakeCase }
-        
         return decoder
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 struct PostLoginJaga2GoAPI: APISetup {
-    var method: HTTPMethod = .POST
+    var method: HttpMethod = .POST
     var path: String = "/auth/login"
     var parameters: [String : Any] = [
         "email": "brayn@gmail.com",

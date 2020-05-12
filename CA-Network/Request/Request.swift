@@ -13,7 +13,7 @@ public typealias OnFailure = ((String)->Void)?
 /// An object that responsible for requesting remote data
 /// - Parameters:
 ///   - T: response object and should extends Codable
-open class Request<T: Codable> {
+open class CARequestService<T: Codable> {
     
     public init() {
         
@@ -26,9 +26,8 @@ open class Request<T: Codable> {
     ///   - onSuccess: retrieve model from response
     ///   - onFailure: retrieve error from response
     public func request(environment: APIEnvironment, config: APISetup, onSuccess: OnSuccess<T>, onFailure: OnFailure) {
-        let request = config.setupRequest(environment: environment)
-        let task = URLSession.shared.dataTask(with: request, completionHandler: { [weak self] (data, _, _) in
-            guard let self = self else { return }
+        let _request = config.setupRequest(environment: environment)
+        let task = URLSession.shared.dataTask(with: _request, completionHandler: { (data, _, _) in
             let result = self.setupResult(data: data, env: environment)
             switch result {
             case .success(let model):
@@ -40,7 +39,7 @@ open class Request<T: Codable> {
         task.resume()
     }
     
-    private func setupResult(data: Data?, env: APIEnvironment) -> Result<T, Error> {
+    func setupResult(data: Data?, env: APIEnvironment) -> Result<T, Error> {
         if Reachability.isConnectedToNetwork() {
             do {
                 let decoder = env.decoder()
@@ -73,7 +72,7 @@ extension URL {
     /// - Parameters:
     ///   - parameters: body or query
     ///   - method: HTTP method
-    func setParameter(parameters: [String: Any], method: HTTPMethod) -> URLRequest {
+    func setParameter(parameters: [String: Any], method: HttpMethod) -> URLRequest {
         switch method {
         case .GET:
             var urlComponents = URLComponents(url: self, resolvingAgainstBaseURL: true)!
