@@ -26,7 +26,6 @@
 		325509DC242DAFB7002DBAB0 /* CA_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 325509DA242DAFB7002DBAB0 /* CA_Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		325509E4242DB0DB002DBAB0 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */; };
 		325509E6242DB2A3002DBAB0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E5242DB2A3002DBAB0 /* Request.swift */; };
-		325509E8242DB472002DBAB0 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E7242DB472002DBAB0 /* HttpMethod.swift */; };
 		325509EA242DB4CA002DBAB0 /* APISetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509E9242DB4CA002DBAB0 /* APISetup.swift */; };
 		325509ED242DB671002DBAB0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509EC242DB671002DBAB0 /* Reachability.swift */; };
 		325509F0242DBB34002DBAB0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325509EF242DBB34002DBAB0 /* Response.swift */; };
@@ -38,6 +37,7 @@
 		32550A0A242E102F002DBAB0 /* PostLoginJaga2GoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32550A09242E102F002DBAB0 /* PostLoginJaga2GoAPI.swift */; };
 		32550A0E242E1064002DBAB0 /* Jaga2GoEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32550A0D242E1064002DBAB0 /* Jaga2GoEnvironment.swift */; };
 		32550A10242E392E002DBAB0 /* PostLoginBodyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32550A0F242E392E002DBAB0 /* PostLoginBodyResponse.swift */; };
+		32973316246B08A9007CFC5D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32973315246B08A9007CFC5D /* HttpMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +81,6 @@
 		325509DB242DAFB7002DBAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		325509E5242DB2A3002DBAB0 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		325509E7242DB472002DBAB0 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		325509E9242DB4CA002DBAB0 /* APISetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISetup.swift; sourceTree = "<group>"; };
 		325509EC242DB671002DBAB0 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		325509EF242DBB34002DBAB0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		32550A09242E102F002DBAB0 /* PostLoginJaga2GoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginJaga2GoAPI.swift; sourceTree = "<group>"; };
 		32550A0D242E1064002DBAB0 /* Jaga2GoEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jaga2GoEnvironment.swift; sourceTree = "<group>"; };
 		32550A0F242E392E002DBAB0 /* PostLoginBodyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLoginBodyResponse.swift; sourceTree = "<group>"; };
+		32973315246B08A9007CFC5D /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		B8DBCFFF7662C2108A37959B /* Pods-CA-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CA-Network.release.xcconfig"; path = "Target Support Files/Pods-CA-Network/Pods-CA-Network.release.xcconfig"; sourceTree = "<group>"; };
 		C5CA52AC9ACC60E19122CB51 /* Pods_CA_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CA_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED541E51076D5CCE9DE9F3D4 /* Pods-CA-Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CA-Network.debug.xcconfig"; path = "Target Support Files/Pods-CA-Network/Pods-CA-Network.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				325509E3242DB0DB002DBAB0 /* APIEnvironment.swift */,
-				325509E7242DB472002DBAB0 /* HttpMethod.swift */,
 				325509E9242DB4CA002DBAB0 /* APISetup.swift */,
+				32973315246B08A9007CFC5D /* HttpMethod.swift */,
 				324A296D246018B30017D131 /* Alamofire */,
 			);
 			path = Setup;
@@ -484,6 +484,7 @@
 				325509EA242DB4CA002DBAB0 /* APISetup.swift in Sources */,
 				32550A10242E392E002DBAB0 /* PostLoginBodyResponse.swift in Sources */,
 				324A296A2460142F0017D131 /* Request+Alamofire.swift in Sources */,
+				32973316246B08A9007CFC5D /* HttpMethod.swift in Sources */,
 				3203EE6D2431EC2100DC8AED /* ResponseWithMetaData.swift in Sources */,
 				324A296C246014EC0017D131 /* AlamofireAPISetup.swift in Sources */,
 				325509E4242DB0DB002DBAB0 /* APIEnvironment.swift in Sources */,
@@ -496,7 +497,6 @@
 				32550A08242DF0D4002DBAB0 /* GetAllCovidCasesAPI.swift in Sources */,
 				325509F0242DBB34002DBAB0 /* Response.swift in Sources */,
 				32550A03242DEB53002DBAB0 /* GetAllCovidCasesBodyResponse.swift in Sources */,
-				325509E8242DB472002DBAB0 /* HttpMethod.swift in Sources */,
 				3203EE6B2431EBF300DC8AED /* ResponseWithMessageAndErrorCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
