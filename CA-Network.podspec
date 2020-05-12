@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "CA-Network"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Clapping Ape base network"
   spec.description  = "Clapping Ape's utility for requesting data"
   spec.homepage     = "https://github.com/mazmik25/CA-Network.git"
